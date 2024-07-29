@@ -1,0 +1,155 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: transparent; /* Matches the body background */
+    padding: 15px;
+    box-shadow: none; /* Remove shadow to blend with body */
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.social-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.social-nav ul li {
+    margin-left: 15px;
+}
+
+.social-nav ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #007bff; /* Icon color */
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.social-nav ul li a:hover {
+    color: #0056b3; /* Hover color */
+}
+
+main {
+    padding: 20px;
+}
+
+.item-listing {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.item-content {
+    display: flex;
+    gap: 20px;
+}
+
+.carousel {
+    position: relative;
+    max-width: 600px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-images img {
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 50%;
+    z-index: 100;
+}
+
+.carousel-control.prev {
+    left: 10px;
+}
+
+.carousel-control.next {
+    right: 10px;
+}
+
+.item-details {
+    flex: 1;
+}
+
+.item-details h2 {
+    margin-top: 0;
+    font-size: 2em;
+    color: #333;
+}
+
+.item-description {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.item-price {
+    font-size: 1.5em;
+    color: #b12704;
+}
+
+.item-location {
+    font-style: italic;
+    color: #555;
+}
+
+.contact-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.contact-button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: white;
+}

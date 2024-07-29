@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item Listing</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <h1>YAP MARKETPLACE</h1>
+            </div>
+            <nav class="social-nav">
+                <ul>
+                    <li><a href="https://t.me/+Yg7if1j1iJJjOTZk" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://x.com/socks_solana_" target="_blank" aria-label="Telegram"><i class="fab fa-telegram-plane"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="item-listing">
+            <div class="item-content">
+                <div class="carousel">
+                    <button class="carousel-control prev" aria-label="Previous Slide">&#10094;</button>
+                    <div class="carousel-images">
+                        <img src="images/1.jpg" alt="Item Image 1">
+                        <img src="images/2.jpg" alt="Item Image 2">
+                        <img src="images/3.jpg" alt="Item Image 3">
+                    </div>
+                    <button class="carousel-control next" aria-label="Next Slide">&#10095;</button>
+                </div>
+                <div class="item-details">
+                    <h2>Socks</h2>
+                    <p class="item-description">Selling medium size socks, barely touched, selling because i need money, will accept trades.
+                        you can call me on 1234-567-890
+                    </p>
+                    <p class="item-price">$8</p>
+                    <p class="item-location"> Baghdad</p>
+                    <button class="contact-button">Contact Seller</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const carouselImages = document.querySelector('.carousel-images');
+            const images = document.querySelectorAll('.carousel-images img');
+            const totalImages = images.length;
+            let index = 0;
+
+            function showImage(newIndex) {
+                if (newIndex >= totalImages) {
+                    index = 0;
+                } else if (newIndex < 0) {
+                    index = totalImages - 1;
+                } else {
+                    index = newIndex;
+                }
+                const offset = -index * 100;
+                carouselImages.style.transform = `translateX(${offset}%)`;
+            }
+
+            document.querySelector('.carousel-control.next').addEventListener('click', function() {
+                showImage(index + 1);
+            });
+
+            document.querySelector('.carousel-control.prev').addEventListener('click', function() {
+                showImage(index - 1);
+            });
+        });
+    </script>
+</body>
+</html>

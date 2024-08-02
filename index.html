@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAT+CALL</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .background {
+            background-image: url('images/Progetto senza titolo (23).jpg'); /* Replace with your image URL */
+            background-size: cover;
+            background-position: center;
+            width: 70%; /* Adjust as needed */
+            height: 100%;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px; /* Padding for content alignment */
+            box-sizing: border-box;
+        }
+
+        .overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Dark transparent overlay */
+        }
+
+        .content {
+            position: relative;
+            text-align: center;
+            color: white;
+            z-index: 1;
+        }
+
+        .title {
+            font-size: 5rem; /* Smaller title */
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+            margin: 0;
+        }
+
+        .subtitle {
+            font-size: 1.5rem; /* Smaller subtitle */
+            margin-top: 10px; /* Space between title and subtitle */
+            color: rgba(255, 255, 255, 0.8); /* Slightly more visible */
+            margin-bottom: 20px; /* Space before social icons */
+        }
+
+        .subtitle a {
+            color: inherit; /* Make the link color inherit from the subtitle */
+            text-decoration: none; /* Remove underline */
+            border-bottom: 1px solid rgba(255, 255, 255, 0.8); /* Optional: add an underline effect */
+        }
+
+        .subtitle a:hover {
+            border-bottom-color: white; /* Change underline color on hover */
+        }
+
+        .socials {
+            display: flex;
+            justify-content: center;
+            gap: 15px; /* Space between social icons */
+        }
+
+        .socials a {
+            display: inline-block;
+            border: 2px solid white;
+            border-radius: 50%;
+            transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+        }
+
+        .socials img {
+            width: 50px; /* Smaller social icons */
+            height: 50px;
+            transition: transform 0.3s ease;
+        }
+
+        .socials a:hover {
+            border-color: green;
+            transform: scale(1.1);
+            box-shadow: 0 0 5px rgba(0, 255, 0, 0.5);
+        }
+
+        .news-section {
+            width: 30%; /* Adjust width as needed */
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9); /* Light background for readability */
+            overflow-y: auto;
+            box-sizing: border-box;
+        }
+
+        .news-item {
+            margin-bottom: 20px;
+        }
+
+        .news-item img {
+            width: 100%; /* Responsive image */
+            height: auto;
+            border-radius: 8px; /* Rounded corners for images */
+        }
+
+        .news-item .description {
+            margin-top: 10px;
+            color: #333; /* Darker text for readability */
+            font-size: 1rem; /* Adjust font size for description */
+        }
+
+        .news-item .title {
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+
+        .news-item .title a {
+            color: #007BFF; /* Link color */
+            text-decoration: none; /* Remove underline */
+        }
+
+        .news-item .title a:hover {
+            text-decoration: underline; /* Underline on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="background">
+            <div class="overlay"></div>
+            <div class="content">
+                <h1 class="title">CAT+CALL</h1>
+                <h2 class="subtitle"><a href="https://www.independent.co.uk/topic/catcalling">$CATCALL #CATCALL</a></h2> <!-- Subtitle as link -->
+                <div class="socials">
+                    <a href="https://x.com/CatCall_sol" target="_blank">
+                        <img src="images/image-removebg-preview (21).png" alt="Twitter">
+                    </a>
+                    <a href="https://t.me/+qbQY35j-WFc3YTlk" target="_blank">
+                        <img src="images/telegram_icon__1_-removebg-preview.png" alt="Telegram">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="news-section">
+            <div class="news-item">
+                <img src="images/iStock-1005945902-1.avif" alt="News Image 1">
+                <div class="title"><a href="https://www.independent.co.uk/life-style/women/running-harassment-catcalling-women-b2518849.html">For women runners, catcalling is constant – and most men don’t realise</a></div>
+                <div class="description">
+                    <p>This article discusses the persistent issue of catcalling faced by female runners and highlights the lack of awareness among many men.</p>
+                </div>
+            </div>
+            <div class="news-item">
+                <img src="images/No catcalling sign.avif" alt="News Image 2">
+                <div class="title"><a href="https://www.independent.co.uk/voices/summer-heatwave-climate-change-street-harassment-catcalling-sexism-a9025221.html">Summer has brought out the street harassment creeps once again</a></div>
+                <div class="description">
+                    <p>An overview of how street harassment has increased during the summer months and the impact on affected individuals.</p>
+                </div>
+            </div>
+            <div class="news-item">
+                <img src="images/schoolgirls-street-harassment.avif" alt="News Image 3">
+                <div class="title"><a href="https://www.independent.co.uk/life-style/women/street-harassment-girls-crime-debate-parliament-house-of-lords-plan-international-uk-a8664381.html">Street harassment should be recognised as a crime, say UK schoolgirls</a></div>
+                <div class="description">
+                    <p>UK schoolgirls are advocating for street harassment to be officially recognized as a crime, highlighting the severity of the issue.</p>
+                </div>
+            </div>
+            <div class="news-item">
+                <img src="images/gettyimages-1192158435.avif" alt="News Image 4">
+                <div class="title"><a href="https://www.independent.co.uk/voices/weinstein-trial-criminal-new-york-rape-sexual-assault-accusations-reporter-catcalled-a9273961.html">I was catcalled covering the Weinstein trial. You can't make that up</a></div>
+                <div class="description">
+                    <p>A recent report shows a significant rise in street harassment incidents in major cities, stressing the need for better safety measures.</p>
+                </div>
+            </div>
+            <div class="news-item">
+                <img src="images/iStock-1272920806.avif" alt="News Image 5">
+                <div class="title"><a href="https://www.independent.co.uk/voices/sexism-catcalling-girls-sexual-harassment-b1840313.html"><div class="title"><a href="https://www.independent.co.uk/voices/weinstein-trial-criminal-new-york-rape-sexual-assault-accusations-reporter-catcalled-a9273961.html">My daughter was catcalled after school. Here’s what I’m going to do</a></div>            </a></div>
+                <div class="description">
+                    <p>This article explores the impact of street harassment on mental health, with personal insights from survivors and experts.</p>
+                </div>
+            </div>
+            <!-- Add more news items as needed -->
+        </div>
+    </div>
+</body>
+</html>

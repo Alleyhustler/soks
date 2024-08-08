@@ -6,6 +6,7 @@ body {
     align-items: center;
     background-color: black;
     overflow: hidden;
+    position: relative;
 }
 
 #container {
@@ -24,9 +25,11 @@ img {
 #social-icons {
     position: absolute;
     top: 40px; /* Adjust the top value as needed */
-    right: 90px; /* Adjust the right value as needed */
+    right: 40px; /* Adjust the right value as needed */
     display: flex;
-    gap: 10px;
+    flex-direction: row; /* Ensure horizontal alignment */
+    gap: 20px; /* Increase gap between icons */
+    z-index: 1000; /* Ensure icons are on top */
 }
 
 #social-icons a img {
